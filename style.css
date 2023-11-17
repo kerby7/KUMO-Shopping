@@ -1,0 +1,315 @@
+/* Universal styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Header styling */
+header{
+   position: fixed;
+   width: 100%;
+   top: 0;
+   right: 0;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px 10%;
+}
+
+section{
+    padding: 5% 10%;
+}
+
+/* Navbar logo image */
+.logo-img{
+  max-width: 120px;
+  height: auto;  
+}
+
+/* Navigation bar */
+.navbar{
+  display: flex;
+}
+
+/*Navigation bar a tags */
+.navbar a{
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 16px;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease-in ;
+}
+
+/*Hover over navigatiobn bar items */
+.navbar a:hover{
+    color: red;
+}
+
+/* Navigation icons */
+.nav-icons i{
+   margin-right: 20px;
+   text-decoration: none;
+   color: #2c2c2c;
+   transition: all .42s ease-in;
+   font-size: 20px;
+}
+
+/*Hover effects on navigation bar icons */
+.nav-icons i:hover{
+    color: blueviolet;
+}
+
+/* Main home section */
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url("images/banner-3.png");
+    background-position: center;
+    background-size: cover; 
+}
+
+/* Wrintings for the homepage image */
+.home-writings{
+    position: absolute;
+    left: 200px;
+    top:  300px;
+    line-height: 1.2;
+}
+
+.home-writings h5{
+    font-size: 20px;
+    color: red;
+}
+
+.home-writings h1{
+    font-size: 4rem;
+}
+
+.home-writings p{
+    font-weight: 400;
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Button below the text stylings */
+.home-button{
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid black;
+    padding: 12px 25px;
+    transition: all 0.22s ease-in;
+}
+
+.home-button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Styling the Trending Section */
+.trending-section{
+  
+  
+}
+.center-text{
+    color: #111;
+    font-size: 22px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.center-text span{
+    color: red;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(260px, auto));
+    gap: 2rem;
+   
+}
+
+.row{
+    position: relative;
+    transition: all .40s;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+
+.heart-icon{
+    position: absolute;
+    right: 0;
+}
+
+.heart-icon:hover{
+    color: red;
+}
+
+.rating{
+    color: #FF8C00;
+}
+
+.price h4{
+    font-weight: 400;
+}
+
+.price p{
+    font-weight: bold;
+}
+
+/* Client review section */
+.client-review{
+    background-color: #F3F4F6;
+}
+
+.reviews{
+    text-align: center;
+}
+
+.reviews h3{
+    padding-top: 30px;
+    color: #111;
+    font-size: 34px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+
+.reviews img{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.reviews p{
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+    
+}
+
+.ceo{
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+
+/* Update center css */
+.update-center-text{
+    text-align: center;
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.cart img{
+    width: 380px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.update-cart{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(380px, auto));
+    gap: 1rem; 
+}
+
+.cart h5{
+    color: #636872;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.cart h4{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart p{
+   color: #707070;
+   font-size: 15px;
+   max-width: 380px;
+   line-height: 25px;
+   margin-bottom: 12px;
+}
+
+.cart h6{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Contact Section CSS */
+.contact{
+    background-color: #f3f4f6;
+}
+
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(5, minmax(160px, auto));
+    gap: 3rem;
+}
+
+.first img{
+    height: auto;
+    width: 140px;
+}
+
+.contact-info h4{
+    color: #212529;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    color: #565656;
+    font-size: 14;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.contact-info p:hover{
+    color: red;
+}
+
+.social-icons i{
+    color: #565656;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s; 
+}
+
+.social-icons i:hover{
+    transform: scale(1.3);
+}
